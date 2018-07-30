@@ -17,10 +17,16 @@ sudo cpan install JSON
 
 sudo cpan install REST::Client
 
+When running script - if you get message about missing module name,
+just run: sudo cpan install module_name.
+
 ##### 3. Install TextMagic: https://github.com/textmagic/textmagic-rest-perl 
 
 ##### 4. Get account with TestMagic API: https://www.textmagic.com/docs/api/
 
+### List of scripts:
+
+#### restarter.pl - Automated script to detect and restart nodeos process.
 NOTE: If restart fails - a flag file RESTART_FAILED is created and script stops running until file is removed.
 
 #### vanity.sh - Find EOS key with certain short name in it by brute force
@@ -33,10 +39,12 @@ NOTE: If restart fails - a flag file RESTART_FAILED is created and script stops 
 
 #### claim-sms.pl - Automated script to claim rewards with SMS notication.
 
-#### restarter.pl - Automated script to detect and restart nodeos process.
-
 #### inspect_bp_keys.pl - Inspect registered producers keys and compare with account keys.
 
 #### monitor-logs.pl - Monitor nodeos log (stderr.txt) in tail mode and detect missed blocks by active producer, notify by SMS.
+
+Author: Eugene Luzgin @ EOS Tribe
+Telegram: eluzgin
+Email: eugene@eostribe.io
 
 
