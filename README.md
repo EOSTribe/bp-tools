@@ -39,6 +39,10 @@ NOTE: If restart fails - a flag file RESTART_FAILED is created and script stops 
 
 #### claim_eos_sms.pl - Automated script to claim EOS BP rewards with SMS notication.
 
+#### claim_bos.pl - Automated script to claim BOS BP rewards.
+
+#### claim_bos_sms.pl - Automated script to claim BOS BP rewards with SMS notication.
+
 #### claim_wbi.pl - Automated script to claim Worbli BP rewards with SMS notication.
 
 #### claim_uos.pl - Automated script to claim UOS BP rewards with SMS notication.
