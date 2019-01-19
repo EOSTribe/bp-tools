@@ -35,9 +35,13 @@ NOTE: If restart fails - a flag file RESTART_FAILED is created and script stops 
 
 #### check_producers.pl - Compare head blocks of two producer nodes and notify if out of sync.
 
-#### claim.pl - Automated script to claim rewards.
+#### claim_eos.pl - Automated script to claim EOS BP rewards.
 
-#### claim-sms.pl - Automated script to claim rewards with SMS notication.
+#### claim_eos_sms.pl - Automated script to claim EOS BP rewards with SMS notication.
+
+#### claim_wbi.pl - Automated script to claim Worbli BP rewards with SMS notication.
+
+#### claim_uos.pl - Automated script to claim UOS BP rewards with SMS notication.
 
 #### inspect_bp_keys.pl - Inspect registered producers keys and compare with account keys.
 

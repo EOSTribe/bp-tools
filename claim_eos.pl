@@ -1,4 +1,5 @@
 use strict;
+use Time::Piece;
 # Author: Eugene Luzgin @ EOS Tribe
 
 my $producer = "<producer-name>";
@@ -14,8 +15,9 @@ open LOG, ">>$datadir/claim.log";
 my @prodstats = `$prodstats_cmd`;
 my $last_claim_time = 0;
 foreach my $stat (@prodstats) {
-	if($stat=~m/"last_claim_time": "(\d+)"/) {
-		$last_claim_time = $1/1000000;
+	if($stat=~m/"last_claim_time": "(\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d)\.\d\d\d"/) {
+		my $tp = Time::Piece->strptime($1, "%Y-%m-%dT%H:%M:%S");
+		$last_claim_time = $tp->epoch;;
 	}
 }
 my $current_time = time();
